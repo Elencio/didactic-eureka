@@ -21,8 +21,9 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
     <div className="md max-w-[544px] p-4 md:w-1/2">
       <div
         className={`
-        ${imgSrc && 'h-full'
-          }  flex h-full flex-col overflow-hidden rounded-lg border border-transparent shadow-nextjs dark:shadow-nextjs-dark`}
+        ${
+          imgSrc && 'h-full'
+        }  flex h-full flex-col overflow-hidden rounded-lg border border-transparent shadow-nextjs dark:shadow-nextjs-dark`}
       >
         <Image
           alt={title}
