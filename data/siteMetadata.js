@@ -2,31 +2,31 @@
 /** @type {import("pliny/config").PlinyConfig } */
 
 const siteMetadata = {
-  title: "Karhdo's Coding Adventure",
+  title: 'Kudonza',
   author: 'Elencio',
   fullName: 'Elencio Calado Zivane',
-  headerTitle: "elencio's Blog",
+  headerTitle: 'Kudonza',
   description:
     'Meu desejo de praticar minhas habilidades e compartilhar o conhecimento adquirido impulsiona meus esforços.',
   language: 'pt-BR',
   theme: 'system',
-  siteUrl: 'https://elencio.dev',
+  siteUrl: 'https://didactic-eureka.vercel.app/',
   analyticsURL:
     "https://analytics.us.umami.is/share/LwbQOMMcBOK9zcwU/Karhdo's%20Blog%20-%20Karhdo's%20Coding%20Adventure",
-  siteRepo: 'https://github.com/Karhdo/karhdo.dev',
+  siteRepo: 'https://github.com/Elencio/didactic-eureka',
   siteLogo: '/static/images/avatar.jpg',
   image: '/static/images/avatar.jpg',
   socialBanner: '/static/images/projects/karhdo-blog.png',
-  email: 'dotrongkhanh.dev@gmail.com',
-  github: 'https://github.com/Karhdo',
+  email: 'elencio.dev.studio@gmail.com',
+  github: 'https://github.com/Elencio',
   facebook: 'https://www.facebook.com/karhdo.dev',
-  linkedin: 'https://www.linkedin.com/in/karhdo',
+  linkedin: 'https://www.linkedin.com/in/elencio-calado-zivane/',
   twitter: 'https://twitter.com/karhdo',
   youtube: 'https://youtube.com',
   locale: 'pt-BR',
   socialAccounts: {
-    github: 'Karhdo',
-    linkedin: 'karhdo',
+    github: 'Elencio',
+    linkedin: 'elencio',
     facebook: 'karhdo.dev',
   },
   analytics: {

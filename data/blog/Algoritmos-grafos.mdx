@@ -1,0 +1,48 @@
+---
+title: 'Algoritmos de Grafos'
+date: '2024-02-01'
+lastmod: '2024-02-01'
+tags: ['application', 'design patterns']
+summary: 'From medium to large-scale applications, challenges like architecture maintenance and scalability hinder progress.'
+layout: PostSimple
+---
+
+import Twemoji from './components/Twemoji';
+
+## Introducão
+
+Para entender a explicacão abaixo sobre os algoritmos, primeiro deve ter um conhecimento basico sobre vertices, arrestas, caminhos, tudo que compoe um grafo, e como ele se comporta.
+
+## Algoritmo de Dijkstra:
+
+    ### Fundamentos:
+      1. Contextualizacão
+
+         Imagine que você está marcado para encontrar seus amigos na casa de um deles. Há vários caminhos possíveis que você pode seguir para chegar até lá. No entanto, ao se preparar para sair, você percebe que está atrasado e, para piorar, não tem dinheiro suficiente para optar por um táxi ou mototáxi, que seriam mais rápidos.
+         Nesse momento de apuro, você precisa decidir qual o caminho mais rápido que pode tomar andando, considerando que alguns trajetos podem estar mais congestionados ou serem mais longos do que outros. 
+         
+         Aqui é onde o algoritmo de Dijkstra se torna uma ferramenta útil, mesmo que você não o aplique conscientemente.
+         O algoritmo de Dijkstra ajuda a encontrar o caminho mais curto de um ponto inicial (neste caso, a sua casa) a um destino desejado (a casa do seu amigo), levando em conta os "pesos" ou distâncias de cada trecho do caminho.
+         
+         Nesse caso, esses pesos podem representar a distância real, o tempo estimado de percurso ou até mesmo o custo de cada trajeto.
+         Assim, o algoritmo avalia todas as rotas possíveis a partir do ponto de partida, calculando o custo total (seja em termos de distância ou tempo) para chegar ao destino por cada uma delas. Ao final, ele identifica a opção que minimiza esse custo total, indicando assim o caminho mais eficiente para você chegar à casa do seu amigo sem se atrasar ainda mais.
+
+         _Uma definicão computacinal, o algoritmo de Dijkstra procura o caminho mais curto entre um nó de origem e todos os outros nós em um grafo ponderado, onde os pesos das arestas representam distâncias, custos ou qualquer outra medida que possa ser quantificada positivamente._
+      2. Implementacão
+
+        
+         2. Estudar diferentes maneiras de implementar o algoritmo, incluindo o uso de uma fila de prioridades para otimizar a seleção do vértice de distância mínima. 
+
+           
+
+
+         ### Otimizações e Limitações: 
+         3. Analisar como a estrutura de dados escolhida afeta a complexidade do tempo e discutir as limitações do algoritmo, como a incapacidade de lidar com arestas de peso negativo.
+
+## Algoritmo de Kruskal:
+
+Algoritmo para encontrar a árvore geradora mínima em um grafo.
+
+## Algoritmo de Floyd-Warshall:
+
+Encontra o caminho mais curto entre todos os pares de vértices em um grafo ponderado.

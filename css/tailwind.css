@@ -4,6 +4,7 @@
 
 * {
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  font-family: "Roboto", sans-serif;
 }
 
 .task-list-item::before {
@@ -82,6 +83,10 @@
 
 .popular-tags .database {
   @apply bg-green-900;
+}
+
+.popular-tags .nextjs {
+  @apply bg-gray-700;
 }
 /* END: CSS popular tags */
 

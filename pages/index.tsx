@@ -1,5 +1,5 @@
 import { InferGetStaticPropsType } from 'next';
-import Snowfall from 'react-snowfall';
+// import Snowfall from 'react-snowfall';
 import { formatDate } from 'pliny/utils/formatDate';
 // import { NewsletterForm } from 'pliny/ui/NewsletterForm';
 import { sortedBlogPost, allCoreContent } from 'pliny/utils/contentlayer';
@@ -11,16 +11,10 @@ import siteMetadata from '@/data/siteMetadata';
 
 import Tag from '@/components/Tag';
 import Link from '@/components/Link';
-import Twemoji from '@/components/Twemoji';
+// import Twemoji from '@/components/Twemoji';
 import { PageSEO } from '@/components/SEO';
-import Greeting from '@/components/homepage/Greeting';
-import Heading from '@/components/homepage/Heading';
-import TypedBios from '@/components/homepage/TypedBios';
-import ShortDescription from '@/components/homepage/ShortDescription';
-import BlogLinks from '@/components/homepage/BlogLinks';
-import SpotifyNowPlaying from '@/components/homepage/SpotifyNowPlaying';
+// import SpotifyNowPlaying from '@/components/homepage/SpotifyNowPlaying';
 import PopularTags from '@/components/homepage/PopularTags';
-import Avatar from '@/components/homepage/Avatar';
 
 const MAX_DISPLAY = 3;
 
@@ -36,7 +30,7 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
 
   return (
     <div className="relative">
-      <Snowfall
+      {/* <Snowfall
         snowflakeCount={60}
         style={{
           zIndex: -1,
@@ -44,38 +38,16 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
           width: '100vw',
           height: '100vh',
         }}
-      />
+      /> */}
 
       <PageSEO title={`${headerTitle} - ${title}`} description={description} />
-
-      {/* Introduce myself */}
-      <div className="mt-8 dark:divide-gray-700 md:mt-8">
-        <Greeting />
-        <div className="flex flex-col justify-between md:my-4 md:pb-8 xl:flex-row">
-          <Avatar />
-          {/* <div className="max-h-[430px] overflow-hidden rounded-md">
-            <Image src={'/static/images/avatar.jpg'} alt="avatar" width={430} height={350} />
-          </div> */}
-          <div className="my-auto flex flex-col text-lg leading-8 text-gray-600 dark:text-gray-400">
-            <Heading />
-            <TypedBios />
-            <ShortDescription />
-            <BlogLinks />
-            <SpotifyNowPlaying />
-            <p className="flex">
-              <span className="mr-2">Happy reading</span>
-              <Twemoji emoji="clinking-beer-mugs" />
-            </p>
-          </div>
-        </div>
-      </div>
 
       <PopularTags />
 
       {/* List all post */}
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
         <div className="space-y-2 py-6 md:space-y-5">
-          <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-5xl md:leading-14">
+          <h1 className="text-lg font-bold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-5xl md:leading-14">
             Postagens Recentes
           </h1>
           <p className="!mt-2 text-lg leading-7 text-gray-500 dark:text-gray-400">{siteMetadata.description}</p>
